@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATHEEQ RAHMAN - Honors</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .honors-header {
+            margin-top: 50px;
+        }
+        .honors-header h2 {
+            font-size: 28px;
+            letter-spacing: 1px;
+            font-weight: 700;
+        }
+
+        .honors-full-bg {
+            background-color: #E6E6E6;
+            width: 100%;
+            padding: 80px 0;
+            margin-top: -30px; /* Offset the main padding slightly for a tighter fit */
+        }
+
+        .honors-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        .honors-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 50px;
+        }
+        
+        .honor-card {
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .honor-card h3 {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 25px;
+            text-transform: none;
+            letter-spacing: 0;
+            color: #333;
+        }
+        .honor-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: contain;
+            background-color: #fff;
+            margin-bottom: 25px;
+        }
+        .honor-card p {
+            font-size: 13px;
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 35px;
+            flex-grow: 1;
+        }
+        .award-btn {
+            display: inline-block;
+            background-color: #000;
+            color: #fff;
+            padding: 12px 25px;
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            align-self: center;
+            transition: background-color 0.3s;
+        }
+        .award-btn:hover {
+            background-color: #333;
+        }
+
+        @media screen and (min-width: 901px) {
+            .honors-grid > .honor-card:last-child:nth-child(4) {
+                grid-column: 2;
+            }
+        }
+
+        @media screen and (max-width: 900px) {
+            .honors-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media screen and (max-width: 600px) {
+            .honors-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="mobile-nav-overlay">
+        <ul class="mobile-nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="certifications.html">Certifications</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="honors.html">Honors</a></li>
+        </ul>
+    </div>
+
+    <header>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </div>
+        </div>
+        <h1 class="site-title"><a href="index.html">ATHEEQ RAHMAN</a></h1>
+        <nav class="desktop-nav">
+            <a href="index.html">HOME</a>
+            <a href="work.html">WORK</a>
+            <a href="projects.html">PROJECTS</a>
+            <a href="certifications.html">CERTIFICATIONS</a>
+            <a href="research.html">RESEARCH</a>
+            <a href="honors.html" class="active">HONORS</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="honors-header">
+            <h2>RECOGNITIONS</h2>
+        </div>
+    </main>
+
+    <div class="honors-full-bg">
+        <div class="honors-container">
+            <div class="honors-grid">
+                <div class="honor-card">
+                    <h3>Best Paper Award</h3>
+                    <img src="img/ICT ACADEMY.png" alt="ICT Academy Logo">
+                    <p>Received the Best Paper Award at NCTS'23 for "Augmenting Learning: Enhancing Textbook Education with Interactive AR Visualizations," recognizing excellence in academic research and innovation.</p>
+                    <a href="award_paper.html" class="award-btn">AWARD SITE</a>
+                </div>
+                <div class="honor-card">
+                    <h3>Perfect CGPA (10.0)</h3>
+                    <img src="img/SRM LOGO.jpeg" alt="SRM Logo">
+                    <p>Achieved the first position in the university rankings during the 1st semester at SRMIST with a perfect CGPA of 10.0.</p>
+                    <a href="award_cgpa.html" class="award-btn">AWARD SITE</a>
+                </div>
+                <div class="honor-card">
+                    <h3>Youth Development</h3>
+                    <img src="img/TNUA Logo.png" alt="TNUA Logo">
+                    <p>Recognized for driving impactful youth development initiatives, leading to commendation from TN State Urdu Academy for significant contributions to education and career guidance.</p>
+                    <a href="award_youth.html" class="award-btn">AWARD SITE</a>
+                </div>
+                <div class="honor-card">
+                    <h3>State Board Topper</h3>
+                    <img src="img/TN LOGO.png" alt="TN Logo">
+                    <p>Recognized as the top-performing student in the state by the State Board for Higher Education in German language proficiency.</p>
+                    <a href="award_german.html" class="award-btn">AWARD SITE</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <a href="https://www.linkedin.com/in/rahmanatheeq/" target="_blank"><i class="fa-brands fa-linkedin-in" style="margin-right: 5px;"></i>LinkedIn</a> <span style="margin-right: 15px; color: #ccc;">|</span>
+        <a href="mailto:atheeqrahman15@gmail.com"><i class="fa-regular fa-envelope" style="margin-right: 5px;"></i>Email</a> <span style="margin-right: 15px; color: #ccc;">|</span>
+        <a href="https://www.instagram.com/atheeqrahman._/?hl=en" target="_blank"><i class="fa-brands fa-instagram" style="margin-right: 5px;"></i>Instagram</a>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

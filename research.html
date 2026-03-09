@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATHEEQ RAHMAN - Research</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .projects-header {
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        .projects-header h2 {
+            font-size: 28px;
+            letter-spacing: 1px;
+            font-weight: 700;
+        }
+        
+        .project-row {
+            display: flex;
+            align-items: flex-start;
+            gap: 50px;
+            margin-bottom: 60px;
+            padding-bottom: 60px;
+            border-bottom: 1px solid #dddddd;
+        }
+        .project-row:last-child {
+            border-bottom: none;
+        }
+
+        .project-text, .project-media {
+            flex: 1;
+        }
+        
+        .project-text h3 {
+            font-size: 22px;
+            margin-bottom: 20px;
+            text-transform: none;
+            font-weight: 700;
+        }
+
+        .project-text ul {
+            padding-left: 20px;
+            color: #2A2A2A;
+        }
+        .project-text ul li {
+            margin-bottom: 15px;
+            font-size: 15px;
+            line-height: 1.6;
+        }
+        .project-text ul li strong {
+            font-weight: bold;
+            color: #000;
+        }
+
+        .project-media img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Fake PDF Viewer Styling for the second project */
+        .pdf-viewer {
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            overflow: hidden;
+            background: #fff;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+        .pdf-toolbar {
+            background-color: #333;
+            color: white;
+            padding: 10px 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 12px;
+            font-family: sans-serif;
+        }
+        .pdf-toolbar-icons {
+            display: flex;
+            gap: 15px;
+        }
+        .pdf-page {
+            padding: 40px;
+            text-align: center;
+            min-height: 400px;
+        }
+        .pdf-page h4 {
+            font-family: 'Times New Roman', serif;
+            font-size: 18px;
+            text-transform: none;
+            margin-bottom: 20px;
+            color: #000;
+        }
+        .pdf-page p {
+            font-family: 'Times New Roman', serif;
+            font-size: 13px;
+            text-align: justify;
+            color: #333;
+        }
+
+        @media screen and (max-width: 768px) {
+            .project-row {
+                flex-direction: column;
+            }
+            .project-row:nth-child(even) {
+                flex-direction: column; /* Force stack on mobile */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="mobile-nav-overlay">
+        <ul class="mobile-nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="certifications.html">Certifications</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="honors.html">Honors</a></li>
+        </ul>
+    </div>
+
+    <header>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </div>
+        </div>
+        <h1 class="site-title"><a href="index.html">ATHEEQ RAHMAN</a></h1>
+        <nav class="desktop-nav">
+            <a href="index.html">HOME</a>
+            <a href="work.html">WORK</a>
+            <a href="projects.html">PROJECTS</a>
+            <a href="certifications.html">CERTIFICATIONS</a>
+            <a href="research.html" class="active">RESEARCH</a>
+            <a href="honors.html">HONORS</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="projects-header">
+            <h2>PERSONAL PROJECTS & RESEARCH</h2>
+        </div>
+
+        <!-- Project 1: Sign Language (PDF on Left, Text on Right) -->
+        <div class="project-row">
+            <div class="project-media">
+                <div class="pdf-viewer">
+                    <iframe src="Papers/SLRS.pdf" width="100%" height="450px" style="border: none;"></iframe>
+                </div>
+            </div>
+            <div class="project-text">
+                <h3>Sign Language Recognition System</h3>
+                <ul>
+                    <li><strong>Developed</strong> a computer vision–based recognition system processing video-frame data.</li>
+                    <li><strong>Achieved</strong> 99.61% accuracy using Random Forest and CNN architectures.</li>
+                    <li><strong>Integrated</strong> with Gemini-powered conversational AI for seamless Human-AI interaction.</li>
+                    <li>Published in Springer Nature, advancing research in assistive AI and accessibility.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Project 2: Smart Campus (Text on Left, PDF on Right) -->
+        <div class="project-row" style="flex-direction: row-reverse;">
+            <div class="project-media">
+                <div class="pdf-viewer">
+                    <iframe src="Papers/Augmenting Learning.pdf" width="100%" height="450px" style="border: none;"></iframe>
+                </div>
+            </div>
+            <div class="project-text">
+                <h3>Smart Campus Initiatives</h3>
+                <ul>
+                    <li><strong>Co-authored</strong> "Smart Campus Initiatives: Projects Driving Educational Automation."</li>
+                    <li><strong>Authored</strong> the specific chapter on "Augmenting Learning: Enhancing Textbook Education with Interactive AR Visualizations".</li>
+                    <li>Received the <strong>Best Paper Award</strong> at NCTS'23 recognizing excellence in academic research and innovation.</li>
+                </ul>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <a href="https://www.linkedin.com/in/rahmanatheeq/" target="_blank"><i class="fa-brands fa-linkedin-in" style="margin-right: 5px;"></i>LinkedIn</a> <span style="margin-right: 15px; color: #ccc;">|</span>
+        <a href="mailto:atheeqrahman15@gmail.com"><i class="fa-regular fa-envelope" style="margin-right: 5px;"></i>Email</a> <span style="margin-right: 15px; color: #ccc;">|</span>
+        <a href="https://www.instagram.com/atheeqrahman._/?hl=en" target="_blank"><i class="fa-brands fa-instagram" style="margin-right: 5px;"></i>Instagram</a>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

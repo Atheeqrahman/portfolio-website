@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATHEEQ RAHMAN - Projects</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .projects-header {
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        .projects-header h2 {
+            font-size: 28px;
+            letter-spacing: 1px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        
+        .project-section {
+            width: 100%;
+            padding: 80px 0;
+        }
+        
+        .project-section.bg-grey {
+            background-color: #E6E6E6;
+        }
+        
+        .project-section.bg-white {
+            background-color: #ffffff;
+        }
+        
+        .project-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        .project-row {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .project-text, .project-media {
+            flex: 1;
+        }
+        
+        .project-text h3 {
+            font-size: 22px;
+            margin-bottom: 20px;
+            text-transform: none;
+            font-weight: 700;
+        }
+
+        .project-text ul {
+            padding-left: 20px;
+            color: #2A2A2A;
+        }
+        .project-text ul li {
+            margin-bottom: 15px;
+            font-size: 15px;
+            line-height: 1.6;
+        }
+        .project-text ul li strong {
+            font-weight: bold;
+            color: #000;
+        }
+
+        .project-media img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        @media screen and (max-width: 768px) {
+            .project-row, .project-row[style*="row-reverse"] {
+                flex-direction: column !important; 
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="mobile-nav-overlay">
+        <ul class="mobile-nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="certifications.html">Certifications</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="honors.html">Honors</a></li>
+        </ul>
+    </div>
+
+    <header>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </div>
+        </div>
+        <h1 class="site-title"><a href="index.html">ATHEEQ RAHMAN</a></h1>
+        <nav class="desktop-nav">
+            <a href="index.html">HOME</a>
+            <a href="work.html">WORK</a>
+            <a href="projects.html" class="active">PROJECTS</a>
+            <a href="certifications.html">CERTIFICATIONS</a>
+            <a href="research.html">RESEARCH</a>
+            <a href="honors.html">HONORS</a>
+        </nav>
+    </header>
+
+    <main style="padding-bottom: 0;">
+        <div class="projects-header">
+            <h2>TECHNICAL PROJECTS</h2>
+        </div>
+    </main>
+
+    <!-- Project 1 (Image on Left) -->
+    <section class="project-section bg-grey">
+        <div class="project-container">
+            <div class="project-row">
+                <div class="project-media">
+                    <img src="img/Snowflake.png" alt="Snowflake Analytics API" style="max-height: 400px; object-fit: contain;">
+                </div>
+                <div class="project-text">
+                    <h3>Snowflake Analytics API</h3>
+                    <ul>
+                        <li><strong>Built</strong> a FastAPI service to ingest large benchmarking CSVs from S3 into PostgreSQL.</li>
+                        <li><strong>Exposed</strong> paginated analytics endpoints for frontend consumption.</li>
+                        <li><strong>Integrated</strong> Snowflake queries to produce customer-level insights accurately and rapidly.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project 2 (Text on Left) -->
+    <section class="project-section bg-white">
+        <div class="project-container">
+            <div class="project-row" style="flex-direction: row-reverse;">
+                <div class="project-media">
+                    <img src="img/Banking.jpg" alt="Open Banking ETL" style="max-height: 400px; object-fit: contain;">
+                </div>
+                <div class="project-text">
+                    <h3>Event-Driven Open Banking ETL</h3>
+                    <ul>
+                        <li><strong>Engineered</strong> a production ETL that ingests transaction data from Bud API.</li>
+                        <li><strong>Staged</strong> active data in SQS, S3, and DynamoDB.</li>
+                        <li><strong>Loaded</strong> history and incremental data into Snowflake seamlessly.</li>
+                        <li><strong>Implemented</strong> a concurrency-safe background token manager.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project 3 (Image on Left) -->
+    <section class="project-section bg-grey">
+        <div class="project-container">
+            <div class="project-row">
+                <div class="project-media">
+                    <img src="img/Ui-ux-Testing.png" alt="AI UI Testing Agents" style="max-height: 400px; object-fit: contain;">
+                </div>
+                <div class="project-text">
+                    <h3>AI-Powered UI Testing Agents</h3>
+                    <ul>
+                        <li><strong>Developed</strong> LLM-driven agents that intricately control both headless and headful browsers.</li>
+                        <li><strong>Generated</strong> and automatically executed End-to-End (E2E) UI tests dynamically.</li>
+                        <li><strong>Implemented</strong> session-isolated browser profiles for scalable, secure execution.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project 4 (Text on Left) -->
+    <section class="project-section bg-white">
+        <div class="project-container">
+            <div class="project-row" style="flex-direction: row-reverse;">
+                <div class="project-media">
+                    <img src="img/llm.jpg" alt="API Test Generation" style="max-height: 400px; object-fit: contain;">
+                </div>
+                <div class="project-text">
+                    <h3>LLM API Test Generation</h3>
+                    <ul>
+                        <li><strong>Engineered</strong> strategist and coordinator LLM agents to deeply analyze API dependencies dynamically via Swagger.</li>
+                        <li><strong>Generated</strong> massive automated test cases spanning edge cases.</li>
+                        <li><strong>Orchestrated</strong> isolated test execution architecture powered by a result vector-store feedback loop.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <a href="https://www.linkedin.com/in/rahmanatheeq/" target="_blank"><i class="fa-brands fa-linkedin-in" style="margin-right: 5px;"></i>LinkedIn</a> <span style="margin-right: 15px; color: #ccc;">|</span>
+        <a href="mailto:atheeqrahman15@gmail.com"><i class="fa-regular fa-envelope" style="margin-right: 5px;"></i>Email</a> <span style="margin-right: 15px; color: #ccc;">|</span>
+        <a href="https://www.instagram.com/atheeqrahman._/?hl=en" target="_blank"><i class="fa-brands fa-instagram" style="margin-right: 5px;"></i>Instagram</a>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
